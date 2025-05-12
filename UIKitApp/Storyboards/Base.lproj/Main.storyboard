@@ -16,30 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajG-BZ-xAh">
-                                <rect key="frame" x="175" y="416" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xap-Dk-8PG">
+                                <rect key="frame" x="71.666666666666686" y="460" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="rmo-ps-qaO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="prumaryButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21s-hi-M96"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajG-BZ-xAh">
+                                <rect key="frame" x="176" y="415.66666666666669" width="41.333333333333343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xap-Dk-8PG">
-                                <rect key="frame" x="159" y="460" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ajG-BZ-xAh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zai-Bt-6uh"/>
+                            <constraint firstItem="Xap-Dk-8PG" firstAttribute="top" secondItem="ajG-BZ-xAh" secondAttribute="bottom" constant="23.333333333333314" id="ebq-2d-5OT"/>
+                            <constraint firstItem="ajG-BZ-xAh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g5v-gf-D1h"/>
+                            <constraint firstItem="Xap-Dk-8PG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvZ-Ky-2xp"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greetingLabel" destination="ajG-BZ-xAh" id="Zhx-9t-4vr"/>
+                        <outlet property="primaryButton" destination="Xap-Dk-8PG" id="hIh-EC-3Wb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="5"/>
+            <point key="canvasLocation" x="139.69465648854961" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
