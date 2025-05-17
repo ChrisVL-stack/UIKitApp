@@ -8,9 +8,30 @@
 import UIKit
 
 class ImagesViewController: UIViewController {
+    
+    private var imageView = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        imageView.contentMode = .scaleAspectFit
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 20
+        imageView.image = UIImage(systemName: "paperplane")
+        imageView.backgroundColor = .gray
+        imageView.tintColor = .red
+        
+        view.addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        
     }
+}
+
+#Preview {
+    ImagesViewController()
 }
