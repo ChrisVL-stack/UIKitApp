@@ -16,6 +16,10 @@
 		6BDFF6A42DD17729004C6A98 /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6A32DD17729004C6A98 /* LabelsViewController.swift */; };
 		6BDFF6A72DD18133004C6A98 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6A62DD18133004C6A98 /* ButtonViewController.swift */; };
 		6BDFF6AA2DD1C9DB004C6A98 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6A92DD1C9DB004C6A98 /* ImagesViewController.swift */; };
+		6BDFF6AD2DD913DF004C6A98 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6AC2DD913DF004C6A98 /* ShapesViewController.swift */; };
+		6BDFF6B12DD935FE004C6A98 /* StacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B02DD935FE004C6A98 /* StacksViewController.swift */; };
+		6BDFF6B42DD93DAA004C6A98 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B32DD93DAA004C6A98 /* TextFieldViewController.swift */; };
+		6BDFF6B72DD95D19004C6A98 /* SccrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B62DD95D19004C6A98 /* SccrollViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		6BDFF6A32DD17729004C6A98 /* LabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
 		6BDFF6A62DD18133004C6A98 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		6BDFF6A92DD1C9DB004C6A98 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		6BDFF6AC2DD913DF004C6A98 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
+		6BDFF6B02DD935FE004C6A98 /* StacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViewController.swift; sourceTree = "<group>"; };
+		6BDFF6B32DD93DAA004C6A98 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		6BDFF6B62DD95D19004C6A98 /* SccrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SccrollViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,10 @@
 				6BDFF6A52DD180F3004C6A98 /* Buttons */,
 				6BDFF6A82DD1C9C2004C6A98 /* Images */,
 				6BDFF6A22DD17662004C6A98 /* Label */,
+				6BDFF6B52DD95D02004C6A98 /* ScrollViews */,
+				6BDFF6AB2DD913BC004C6A98 /* Shapes */,
+				6BDFF6AF2DD935E4004C6A98 /* Stacks */,
+				6BDFF6B22DD93D82004C6A98 /* TextFields */,
 				6BDFF6932DD15F25004C6A98 /* ViewController.swift */,
 			);
 			path = Basics;
@@ -146,6 +158,38 @@
 				6BDFF6A92DD1C9DB004C6A98 /* ImagesViewController.swift */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		6BDFF6AB2DD913BC004C6A98 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				6BDFF6AC2DD913DF004C6A98 /* ShapesViewController.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		6BDFF6AF2DD935E4004C6A98 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				6BDFF6B02DD935FE004C6A98 /* StacksViewController.swift */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
+		6BDFF6B22DD93D82004C6A98 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				6BDFF6B32DD93DAA004C6A98 /* TextFieldViewController.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		6BDFF6B52DD95D02004C6A98 /* ScrollViews */ = {
+			isa = PBXGroup;
+			children = (
+				6BDFF6B62DD95D19004C6A98 /* SccrollViewViewController.swift */,
+			);
+			path = ScrollViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +268,14 @@
 			files = (
 				6BDFF6AA2DD1C9DB004C6A98 /* ImagesViewController.swift in Sources */,
 				6BDFF6952DD15F25004C6A98 /* AppDelegate.swift in Sources */,
+				6BDFF6B72DD95D19004C6A98 /* SccrollViewViewController.swift in Sources */,
 				6BDFF6962DD15F25004C6A98 /* SceneDelegate.swift in Sources */,
 				6BDFF6972DD15F25004C6A98 /* ViewController.swift in Sources */,
 				6BDFF6A72DD18133004C6A98 /* ButtonViewController.swift in Sources */,
+				6BDFF6B12DD935FE004C6A98 /* StacksViewController.swift in Sources */,
 				6BDFF6A42DD17729004C6A98 /* LabelsViewController.swift in Sources */,
+				6BDFF6AD2DD913DF004C6A98 /* ShapesViewController.swift in Sources */,
+				6BDFF6B42DD93DAA004C6A98 /* TextFieldViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ class LabelsViewController: UIViewController {
         label.textColor = .gray
         return label
     }()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,8 +33,6 @@ class LabelsViewController: UIViewController {
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.topAnchor.constraint(equalTo: textLabel.bottomAnchor, constant: 10).isActive = true
         subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-
-        
         
     }
     
