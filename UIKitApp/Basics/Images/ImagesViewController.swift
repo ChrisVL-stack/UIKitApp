@@ -13,13 +13,14 @@ class ImagesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
         
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 20
         imageView.image = UIImage(systemName: "paperplane")
-        imageView.backgroundColor = .gray
-        imageView.tintColor = .red
+        imageView.backgroundColor = .purple
+        imageView.tintColor = .white
         
         view.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
