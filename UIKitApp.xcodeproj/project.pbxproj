@@ -20,6 +20,8 @@
 		6BDFF6B12DD935FE004C6A98 /* StacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B02DD935FE004C6A98 /* StacksViewController.swift */; };
 		6BDFF6B42DD93DAA004C6A98 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B32DD93DAA004C6A98 /* TextFieldViewController.swift */; };
 		6BDFF6B72DD95D19004C6A98 /* SccrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B62DD95D19004C6A98 /* SccrollViewViewController.swift */; };
+		6BDFF6BA2DDA461B004C6A98 /* DelegateDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6B92DDA461B004C6A98 /* DelegateDesignViewController.swift */; };
+		6BDFF6BC2DDA5485004C6A98 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFF6BB2DDA5485004C6A98 /* ActionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		6BDFF6B02DD935FE004C6A98 /* StacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViewController.swift; sourceTree = "<group>"; };
 		6BDFF6B32DD93DAA004C6A98 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		6BDFF6B62DD95D19004C6A98 /* SccrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SccrollViewViewController.swift; sourceTree = "<group>"; };
+		6BDFF6B92DDA461B004C6A98 /* DelegateDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDesignViewController.swift; sourceTree = "<group>"; };
+		6BDFF6BB2DDA5485004C6A98 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				6BDFF6A52DD180F3004C6A98 /* Buttons */,
+				6BDFF6B82DDA45EC004C6A98 /* DelegateDesign */,
 				6BDFF6A82DD1C9C2004C6A98 /* Images */,
 				6BDFF6A22DD17662004C6A98 /* Label */,
 				6BDFF6B52DD95D02004C6A98 /* ScrollViews */,
@@ -192,6 +197,15 @@
 			path = ScrollViews;
 			sourceTree = "<group>";
 		};
+		6BDFF6B82DDA45EC004C6A98 /* DelegateDesign */ = {
+			isa = PBXGroup;
+			children = (
+				6BDFF6B92DDA461B004C6A98 /* DelegateDesignViewController.swift */,
+				6BDFF6BB2DDA5485004C6A98 /* ActionButtonView.swift */,
+			);
+			path = DelegateDesign;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,10 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDFF6AA2DD1C9DB004C6A98 /* ImagesViewController.swift in Sources */,
+				6BDFF6BA2DDA461B004C6A98 /* DelegateDesignViewController.swift in Sources */,
 				6BDFF6952DD15F25004C6A98 /* AppDelegate.swift in Sources */,
 				6BDFF6B72DD95D19004C6A98 /* SccrollViewViewController.swift in Sources */,
 				6BDFF6962DD15F25004C6A98 /* SceneDelegate.swift in Sources */,
 				6BDFF6972DD15F25004C6A98 /* ViewController.swift in Sources */,
+				6BDFF6BC2DDA5485004C6A98 /* ActionButtonView.swift in Sources */,
 				6BDFF6A72DD18133004C6A98 /* ButtonViewController.swift in Sources */,
 				6BDFF6B12DD935FE004C6A98 /* StacksViewController.swift in Sources */,
 				6BDFF6A42DD17729004C6A98 /* LabelsViewController.swift in Sources */,

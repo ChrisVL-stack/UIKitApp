@@ -20,7 +20,7 @@ class SccrollViewViewController: UIViewController {
     }()
     
     private let rectHeight: CGFloat = 200
-    private let numberOfRects = 10
+    private let numberOfRects = 25
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +39,9 @@ class SccrollViewViewController: UIViewController {
         
         scrollView.addSubview(stackView)
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        scrollView.contentSize.height = (rectHeight * CGFloat(numberOfRects)) + 150
         
-        scrollView.contentSize.height = (rectHeight * CGFloat(numberOfRects)) + 64
-        
+        scrollView.delegate = self
     }
     
     // helper function
@@ -53,7 +53,24 @@ class SccrollViewViewController: UIViewController {
         view.layer.cornerRadius = 16
         return view
     }
+}
+
+extension SccrollViewViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print("DEBUG: scroll offset \(scrollView.contentOffset)")
+    }
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print("DEBUG: Scroll view did end decel..")
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        print("DEBUG: Scroll view did end drag..")
+    }
+    
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+        print("DEBUG: Scroll view did scroll to top..")
+    }
 }
 
 #Preview {
