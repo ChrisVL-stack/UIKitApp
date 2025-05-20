@@ -7,7 +7,14 @@
 
 import UIKit
 
+protocol ActionButtonViewDelegate: AnyObject {
+    func onPrimaryTap()
+    func onSecondaryTap()
+}
+
 class ActionButtonView: UIView {
+    
+    weak var delegate: ActionButtonViewDelegate?
     
     private var primaryActionButton: UIButton = {
         let button = UIButton(type: .system)
@@ -60,10 +67,12 @@ class ActionButtonView: UIView {
     
     @objc func handlePrimaryTap() {
         print("DEBUG: Primary button touch in view..")
+        delegate?.onPrimaryTap()
     }
     
     @objc func handleSecondaryTap() {
         print("DEBUG: Secondary button touch in view..")
+        delegate?.onSecondaryTap()
     }
     
 }
